@@ -1,0 +1,41 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="box-contact">
+            <h3 style="color:red;">Login</h3>
+            <form id="contact-form" action="../Home/Signin" method="post">
+                <fieldset>
+                    <div class="coll-1">
+                        <div>
+                            <b><div class="form-txt">Enter Username:</div></b>
+                            <label class="name">
+                                <input type="text" name="uname" placeholder="username">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Password:</div></b>
+                            <label class="name">
+                                <input type="password" name="pwd" placeholder="Enter Passowrd">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                       
+                        <button type="submit" >Login</button><li><u><b><a href="~/Home/signup" style="color: #CC0000">Create Your Epicurious Account</a></u></b></li>
+                      <!--  <div class="btns"><a class="btn" data-type="submit"  style="color:red;">Log In</a></div>
+                   --> </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,187 @@
+﻿@*@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}*@
+@{
+    Layout = null;
+
+    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gourmet Cooking School</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/Content/css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="~/Content/css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="~/Content/css/grid.css" type="text/css" media="screen">
+    <link rel="icon" href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen">
+    <script src="~/Content/js/jquery-1.7.1.min.js"></script>
+    <script src="~/Content/js/superfish.js"></script>
+    <script src="~/Content/js/jquery.flexslider-min.js"></script>
+    <script>
+        jQuery(window).load(function () {
+            jQuery('.flexslider').flexslider({
+                animation: "fade",
+                slideshow: true,
+                slideshowSpeed: 7000,
+                animationDuration: 600,
+                prevText: "",
+                nextText: "",
+                controlNav: false
+            })
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400" rel="stylesheet" type="text/css">
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="line-top"></div>
+         <div class="main">
+            <div class="row-top">
+                <h1><a href="~/PublicUser/index"><img alt="" src="~/Content/images/logo.png"></a></h1>
+                <nav>
+                    <ul class="sf-menu">
+                        <li>
+                            <a href="~/PublicUser/recipes">Recipes</a>
+                            <ul>
+                                <li><a href="~/Home/addrecipe/@Session["UId"]">Create consetetur sadipscing</a></li>
+                                <li><a href="~/Home/updateConfirm/@Session["UId"]">Update consetetur elitr</a>
+                                <li><a href="~/Home/delrecipe/@Session["UId"]">Delete consetetur sadipscing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="~/Home/myrecipe/@Session["UId"]">My Recipe</a> </li>
+                        <li><a href="~/Home/myprofile/@Session["UId"]">Profile</a>
+                            <ul>
+                                <li><a href="~/Home/settings/@Session["UId"]">Settings</a></li>
+                                <li><a href="~/Home/generalinfo/@Session["UId"]">Profile Update </a>
+                                @*<li><a href="#">sanctus est</a></li>*@
+                            </ul>
+                         </li>
+                        <li><a href="~/PublicUser/chefs">Chef</a> </li>
+                        <li><a href="~/PublicUser/courses">Course</a> </li>
+                        <li><a href="~/Home/login">Login</a></li>
+
+                        <li><a href="~/PublicUser/contacts">Contact</a> </li>
+                        <li><a href="~/Home/logout">Log Out</a> </li>
+
+                    </ul>
+
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="box-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li> <img alt="" src="~/Content/images/slide-1.jpg"></li>
+                    <li> <img alt="" src="~/Content/images/slide-2.jpg"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-slogan">
+            <h3>Welcome to Epicurious cooking school!</h3>
+            <p> At vero eos et <a href="#" class="link-1">accusam et</a> justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. </p>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="container_12 row-1">
+            <article class="grid_4 thumbnail-1">
+                <h3><span>Vegan</span> cookings </h3>
+                <figure class="box-img"><img src="~/Content/images/page1-img1.jpg" alt=""></figure>
+                <p><a href="#" class="link-1">Click here</a> for more info about this free template created by TemplateMonster.com team.</p>
+                <a href="#" class="btn">Read more</a>
+            </article>
+            <article class="grid_4 thumbnail-1">
+                <h3><span>grill</span> cookings </h3>
+                <figure class="box-img"><img src="~/Content/images/page1-img2.jpg" alt=""></figure>
+                <p>This web template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
+                <a href="#" class="btn">Read more</a>
+            </article>
+            <article class="grid_4 thumbnail-1">
+                <h3><span>dessert</span> cookings </h3>
+                <figure class="box-img"><img src="~/Content/images/page1-img3.jpg" alt=""></figure>
+                <p>The PSD source files of this template are available for free for the registered members.</p>
+                <a href="#" class="btn">Read more</a>
+            </article>
+            <div class="clear"></div>
+        </div>
+        <div class="border-horiz"></div>
+        <div class="container_12">
+            <article class="grid_4">
+                <h3>popular</h3>
+                <ul class="list-popular">
+                    <li>
+                        <a href="http://www.cookinglight.com/food/recipe-finder">Lighter cooking</a>
+                        <p>Give yourself a gut check</p>
+                    </li>
+                    <li>
+                        <a href="http://allrecipes.com/recipes/363/desserts/custards-and-puddings/">Pudding</a>
+                        <p>Get easy recipes for creamy chocolate pudding,mousse,banana,rice,puddings</p>
+                    </li>
+                    <li>
+                        <a href="http://allrecipes.com/recipes/363/desserts/custards-and-puddings/">Black bean salsa</a>
+                        <p>Beans are goto pantryfor salad and quick meals,Canned are quick,but sodium and are more cost effective.</p>
+                    </li>
+                    <li>
+                        <a href="http://www.jamieoliver.com/news-and-features/features/how-to-cook-asparagus/">Asparagus</a>
+                        <p>To steam,place spears in a steaming basket with a little water underneath</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="grid_8">
+                <h3>Professional programs</h3>
+                <blockquote class="quote-1"> “AM I TOUGH? AM I STRONG? AM I HARD-CORE? ABSOLUTELY.DID I WHIMPER WITH PATHETIC DELIGHT WHEN I SANK MY TEETH INTO MY HOT FRIED-CHICKEN SANDWICH? “</blockquote>
+                <div class="name-author">― James Patterson</div>
+                <ul class="list-dropcap">
+                    <li>
+                        <div class="wrapper">
+                            <div class="dropcap">A</div>
+                            <a href="http://www.choochoogolf.com/events/lorem-ipsum-dolor-sit-amet-2/">Lorpsum dolor</a>
+                        </div>
+                        <figure class="box-img"><img src="~/Content/images/page1-img4.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <div class="dropcap">B</div>
+                            <a href="http://www.graphedisseny.es/promociones/web-basica-1/">
+                                consetet
+                                sadiping
+                            </a>
+                        </div>
+                        <figure class="box-img"><img src="~/Content/images/page1-img5.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <div class="dropcap">C</div>
+                            <a href="http://previewrosedale.com/portfolio_item/diam-nonummy/">diam nonumy </a>
+                        </div>
+                        <figure class="box-img"><img src="~/Content/images/page1-img6.jpg" alt=""></figure>
+                    </li>
+                </ul>
+            </article>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="main">
+            <ul class="soc-list">
+                <li><a href="#"><img alt="" src="~/Content/images/icon-1.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-2.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-3.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-4.png"></a></li>
+            </ul>
+            <div class="policy">Design by: <a href="http://www.templatemonster.com">TemplateMonster.com</a> </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>

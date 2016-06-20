@@ -1,0 +1,87 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+@model Epicurious.Models.epicuser
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="box-contact">
+            
+           
+            <h3 style="color:red;">Your Information</h3>
+            <form id="contact-form" action="../Home/UpdateProfileNow/@Session["UId"]">
+                <fieldset>
+                    <div class="coll-1">
+                        <div>
+                            
+                            <div>
+                                <b><div class="form-txt">First Name:</div></b>
+                                <label class="name">
+                                    <input type="text" name="name" placeholder="firstname" value="@Model.firstname">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                            <div>
+                                <b><div class="form-txt">Last Name:</div></b>
+                                <label class="name">
+                                    <input type="text" name="name" placeholder="lastname" value="@Model.lastname">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                            <b><div class="form-txt">Display Name:</div></b>
+                            <label class="name">
+                                <input type="text" name="n" value="@Model.username">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Email Address:</div></b>
+                            <label class="name">
+                                <input type="text" name="e" value="@Model.email">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Phone Number:</div></b>
+                            <label class="name">
+                                <input type="text" name="Contact" placeholder="##" value="@Model.phone">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        
+                         <div>
+                                <b><div class="form-txt">Address:</div></b>
+                                <label class="name">
+                                    <input type="text" name="address" placeholder="address" value="@Model.address">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                           
+                            <div>
+                                <b><div class="form-txt">City:</div></b>
+                                <label class="name">
+                                    <input type="text" name="city" placeholder="Lahore,Karachi...." value="@Model.city">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                           
+                            
+                        <button type="submit" class="btn btn-primary">Update </button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

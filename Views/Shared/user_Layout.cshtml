@@ -1,0 +1,121 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <head>
+        
+        <title>Epicurious</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="~/Content/css/reset.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="~/Content/css/style.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="~/Content/css/grid.css" type="text/css" media="screen">
+        <link rel="stylesheet" type="text/css" href="~/Content/css/style3.css" media="screen">
+        <link href="~/Content/css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/css/ie.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/css/grid.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/css/reset.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/css/style3.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="~/Content/js/PIE.htc" rel="stylesheet" type="text/css" media="screen" />
+
+        <link rel="icon" href="~/Content/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/x-icon">
+        <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen">
+        <script src="~/Content/js/jquery-1.7.1.min.js"></script>
+        <script src="~/Content/js/superfish.js"></script>
+        <script src="~/Content/js/jquery.flexslider-min.js"></script>
+        <script>
+            jQuery(window).load(function () {
+                jQuery('.flexslider').flexslider({
+                    animation: "fade",
+                    slideshow: true,
+                    slideshowSpeed: 7000,
+                    animationDuration: 600,
+                    prevText: "",
+                    nextText: "",
+                    controlNav: false
+                })
+            });
+        </script>
+        <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400" rel="stylesheet" type="text/css">
+        <![endif]-->
+    </head>
+</head>
+<header>
+    <div class="line-top"></div>
+
+    <div class="main">
+        <div class="row-top">
+            <h1><a href="~/PublicUser/index"><img alt="" src="~/Content/images/logo.png"></a></h1>
+            <nav>
+                <ul class="sf-menu">
+                    <li>
+                        <a href="~/PublicUser/recipes">Recipes</a>
+                        <ul>
+                            <li><a href="~/Home/addrecipe">Create consetetur sadipscing</a></li>
+                            <li><a href="~/Home/updateConfirm">Update consetetur elitr</a>
+                            <li><a href="~/Home/delrecipe">Delete consetetur sadipscing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="~/Home/myrecipe">My Recipe</a> </li>
+                    <li>
+                        <a href="~/Home/myprofile">Profile</a>
+                        <ul>
+                            <li><a href="~/Home/settings">Settings</a></li>
+                            <li>
+                                <a href="~/Home/generalinfo">Profile Update </a>
+                                @*<li><a href="#">sanctus est</a></li>*@
+                        </ul>
+                    </li>
+                    <li><a href="~/PublicUser/chefs">Chef</a> </li>
+                    <li><a href="~/PublicUser/courses">Course</a> </li>
+                    <li><a href="~/Home/login">Login</a></li>
+
+                    <li><a href="~/PublicUser/contacts">Contact</a> </li>
+                    <li><a href="~/Home/logout">Log Out</a> </li>
+
+                </ul>
+
+
+            </nav>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+</header>
+<body>
+
+    @RenderBody()
+    <footer>
+        <div class="main">
+            <ul class="soc-list">
+                <li><a href="https://www.facebook.com/asifa.tasleem.10"><img alt="" src="~/Content/images/icon-1.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-2.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-3.png"></a></li>
+                <li><a href="#"><img alt="" src="~/Content/images/icon-4.png"></a></li>
+            </ul>
+            <div class="policy">Design by: <a href="http://www.templatemonster.com">Asifa Tasleem</a> </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+

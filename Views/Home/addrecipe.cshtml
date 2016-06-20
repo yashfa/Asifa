@@ -1,0 +1,134 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+@model Epicurious.Models.epicuser
+@*@model Epicurious.Models.epicrecipe*@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="box-contact">
+            <h3 style="color:red;" >Add Recipe</h3>
+            <form id="contact-form" action="../../Home/addrecp/?@Session["UId"]" method="post">
+                <fieldset>
+                    <div class="coll-1">
+                        <div>
+                            <b><div class="form-txt">Recipe Title:</div></b>
+                            <label class="name">
+                                <input type="text" name="recipetitle">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="coll-2">
+                            <div>
+                                <b><div class="form-txt">Introduction:</div></b>
+                                <label class="message">
+                                    <textarea name="int" rows="3"></textarea>
+                                    <span class="error"></span> <span class="empty">*required.</span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div>
+                            <div class="form-txt"><b>Unit:</b></div>
+                            <select required name="recipeUnit">
+                                <option value="">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Serving Quantity:</div></b>
+                            <select required name="servingQuantity">
+                                <option value="">Select</option>
+                                <option value="Person">Person</option>
+                                <option value="People">People</option>
+                                <option value="Cup">Cup</option>
+                                <option value="Cups">Cups</option>
+                                <option value="Gallon">Gallon</option>
+                                <option value="Gallons">Gallons</option>
+                                <option value="Liter">Liter</option>
+                                <option value="Liters">Liters</option>
+                                <option value="Serving">Serving</option>
+                                <option value="Servings">Servings</option>
+                            </select>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Active Time: </div></b>
+                            <label class="name">
+                                <input type="text" name="ActiveTime" placeholder="hour,Minutes">
+
+                            </label>
+                            <b><div class="form-txt">Total Time:</div></b>
+                            <label class="name">
+
+                                <input type="text" name="TotalTime" placeholder="hour,Minutes">
+                            </label>
+
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <h1>________________________________________________</h1>
+                            <h3> Ingredients</h3>
+                            <div>
+                                <b><div class="form-txt">Name:</div></b>
+                                <label class="name">
+                                    <input type="text" name="name" placeholder="name">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                            <div>
+                                <b><div class="form-txt">Quantity:</div></b>
+                                <label class="name">
+                                    <input type="text" name="Quantity" placeholder="e.g 2,11/5,.5">
+                                    <span class="error"></span> <span class="empty"></span>
+                                </label>
+                                <div class="clear"></div>
+                                <b><div class="form-txt">Unit:</div></b>
+                                <select required name="ingredU">
+                                    <option value="">Select</option>
+                                    <option value="Scoop">Scoop</option>
+                                    <option value="Scoops">Scoops</option>
+                                    <option value="Cup">Cup</option>
+                                    <option value="Cups">Cups</option>
+                                    <option value="Gallon">Gallon</option>
+                                    <option value="Gallons">Gallons</option>
+                                    <option value="Liter">Liter</option>
+                                    <option value="Liters">Liters</option>
+                                    <option value="Serving">Serving</option>
+                                    <option value="Servings">Servings</option>
+                                </select>
+                                <button type="submit">Add</button>
+
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

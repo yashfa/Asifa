@@ -1,0 +1,61 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <section id="content">
+        <div class="border-horiz"></div>
+
+        <div class="box-contact">
+            <h3>Contact Form</h3>
+            <form id="contact-form" action="#">
+                <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+                <fieldset>
+                    <div class="coll-1">
+                        <div>
+                            <div class="form-txt">Your Name:</div>
+                            <label class="name">
+                                <input type="text">
+                                <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <div class="form-txt">Telephone:</div>
+                            <label class="phone">
+                                <input type="tel">
+                                <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <div class="form-txt">Email:</div>
+                            <label class="email">
+                                <input type="email">
+                                <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="coll-2">
+                        <div>
+                            <div class="form-txt">Message:</div>
+                            <label class="message">
+                                <textarea></textarea>
+                                <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="btns"> <a class="btn" data-type="reset">Clear</a> <a class="btn" data-type="submit">send</a> </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

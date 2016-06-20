@@ -1,0 +1,97 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+@model Epicurious.Models.epicrecipe
+
+<html lang="en">
+
+<body>
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="box-contact">
+            <h3 style="color:red;">Update Recipe</h3>
+            <form id="contact-form" action="../UpdateRecipeNow/@Model.recipeid" method="post">
+                <fieldset>
+                    <div class="coll-1">
+                        <div>
+                            <b><div class="form-txt">Recipe Title:</div></b>
+                            <label class="name">
+                                <input type="text" name="recipetitle" value="@Model.recipeTitle">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="coll-2">
+                            <div>
+                                <b><div class="form-txt">Introduction:</div></b>
+                                <label class="message">
+                                    <textarea name="int" rows="3" value="@Model.Introduction"></textarea>
+                                    <span class="error"></span> <span class="empty">*required.</span>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Unit:</div></b>
+                            <label class="name">
+                                <input type="text" name="recipeUnit" value="@Model.recipeUnit">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Serving Quantity:</div></b>
+                            <label class="name">
+                                <input type="text" name="servingQuantity" value="@Model.servingQuantity">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <div class="form-txt">Active Time: </div>
+                            <label class="name">
+                                <input type="text" name="ActiveTime" value="@Model.activeTime" placeholder="hour,Minutes">
+
+                            </label>
+                            <b><div class="form-txt">Total Time:</div></b>
+                            <label class="name">
+
+                                <input type="text" name="TotalTime" value="@Model.totaltime" placeholder="hour,Minutes">
+                            </label>
+
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Ingredient Name:</div></b>
+                            <label class="name">
+                                <input type="text" name="Name" value="@Model.ingredName">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Ingredient Quantity:</div></b>
+                            <label class="name">
+                                <input type="text" name="Quantity" value="@Model.ingredQuantity">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Ingredient Unit:</div></b>
+                            <label class="name">
+                                <input type="text" name="ingredU" value="@Model.ingredUnit">
+                                <span class="error"></span> <span class="empty">*required.</span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update </button>
+                        </fieldset>
+               
+                </form>
+            </div>
+                        
+    </section>
+   
+</body>
+</html>

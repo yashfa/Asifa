@@ -1,0 +1,34 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+@using Epicurious.Models;
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <section id="content">
+        <div class="border-horiz"></div>
+
+        <div class="box-contact">
+            <h3>Settings</h3>
+            <form id="contact-form" action="#">
+                <div class="success"> <strong> </strong> </div>
+                <fieldset>
+                    <div class="coll-1">
+                        <u><li><b><a href="~/Home/generalinfo/@Session["UId"]" style="color: #CC0000" >General Info </a></b></li></u>
+                       <u><li><b><a href="~/Home/changepassword" style="color: #CC0000">Change Password </a></b></li></u>
+
+                       
+
+
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

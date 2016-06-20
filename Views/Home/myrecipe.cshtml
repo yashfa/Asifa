@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+
+
+@model List<Epicurious.Models.epicrecipe>
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update </title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="~/Content/css/style.css" type="text/css" media="screen">
+
+
+</head>
+<body>
+
+    <table class="table">
+
+        <tr style="background-color:#f2dede;">
+            <td style="text-align:center; color:#a94442"><b>Id</b></td>
+            <td style="text-align:center; color:#a94442"><b>Title</b></td>
+            <td style="text-align:center; color:#a94442"><b>Introd</b></td>
+            <td style="text-align:center; color:#a94442"><b>Unit</b></td>
+            <td style="text-align:center; color:#a94442"><b>Serving Quantity</b></td>
+            <td style="text-align:center; color:#a94442"><b>Active Time</b></td>
+            <td style="text-align:center; color:#a94442"><b>Total Time</b></td>
+            <td style="text-align:center; color:#a94442"><b>Ingredient Name </b></td>
+            <td style="text-align:center; color:#a94442"><b>Ingredient Quantity</b></td>
+            <td style="text-align:center; color:#a94442"><b>Ingredient Unit</b></td>
+
+        </tr>
+
+        @foreach (var p in Model)
+        {
+            
+                <tr>
+                <td style="text-align:center">@p.recipeid</td>
+                <td style="text-align:center">@p.recipeTitle</td>
+                <td style="text-align:center">@p.Introduction</td>
+                <td style="text-align:center">@p.recipeUnit</td>
+                <td style="text-align:center">@p.servingQuantity</td>
+                <td style="text-align:center">@p.activeTime</td>
+                <td style="text-align:center">@p.totaltime</td>
+                <td style="text-align:center">@p.ingredName</td>
+                <td style="text-align:center">@p.ingredQuantity</td>
+                <td style="text-align:center">@p.ingredUnit</td>
+
+
+                <td style="text-align:center">
+                    @*<form action="myrecipe/@p.recipeid" onsubmit="return agree()">
+                       
+                    </form>*@
+
+                </td>
+            </tr>
+            
+           
+        }
+
+    </table>
+
+
+
+</body>
+</html>
+
+

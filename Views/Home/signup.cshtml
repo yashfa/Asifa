@@ -1,0 +1,104 @@
+﻿@{
+    Layout ="/Views/Shared/user_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <section id="content">
+        <div class="border-horiz"></div>
+        <div class="box-contact">
+            
+            <form id="contact-form" action="../Home/Signupp" method="post">
+                <fieldset>
+                    <div class="coll-1">
+        <h3 style="color:red;">Sign Up</h3>
+                        <div>
+                            <b><div class="form-txt">First Name:</div></b>
+                            <label class="name">
+                                <input type="text" name="fname" placeholder="first name">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Last Name:</div></b>
+                            <label class="name">
+                                <input type="text" name="lname" placeholder="last name">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Username:</div></b>
+                            <label class="name">
+                                <input type="text" name="uname" placeholder="username">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Password:</div></b>
+                            <label class="name">
+                                <input type="text" name="pwd" placeholder="password">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Email:</div></b>
+                            <label class="name">
+                                <input type="text" name="email" placeholder="email">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Phone Number:</div></b>
+                            <label class="name">
+                                <input type="text" name="contact" placeholder="##">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Address:</div></b>
+                            <label class="name">
+                                <input type="text" name="address" placeholder="address">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div>
+                            <b><div class="form-txt">City:</div></b>
+                            <label class="name">
+                                <input type="text" name="city" placeholder="Lahore,Karachi....">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+
+                            <div class="clear"></div>
+                        </div>
+                        <div>
+                            <b><div class="form-txt">Role:</div></b>
+                            <label class="name">
+                                <input type="text" name="role" placeholder="enter u/a">
+                                <span class="error"></span> <span class="empty"></span>
+                            </label>
+                            <div class="clear"></div>
+                        </div>
+                        <button type="submit">Signup</button>
+
+
+                     <!-----
+                        <div class="btns"><a class="btn" data-type="submit" href="~/Home/myprofile" style="color:red;">Register</a></div>
+                    
+                    -->
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
